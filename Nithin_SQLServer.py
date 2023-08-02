@@ -1,5 +1,5 @@
 # Databricks notebook source
-df_remote_table = (spark.read
+dfremote_table = (spark.read
                    .format("sqlserver")
                    .option("host", "dbservernithin19.database.windows.net")
                    .option("port","1433")
@@ -12,7 +12,7 @@ df_remote_table = (spark.read
 
 # COMMAND ----------
 
-df_remote_table.show(5)
+dfremote_table.show(5)
 
 # COMMAND ----------
 
