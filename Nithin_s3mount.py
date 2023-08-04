@@ -28,3 +28,6 @@ file_name="iris.csv"
 df = spark.read.format("csv").load("/mnt/%s/%s" % (mount_name , file_name))
 df.show()
 #spark.read.format("csv").load("s3://bkt-nithin-04aug/iris.csv")
+
+strMountPointParquetFile="/mnt/%s/abc.parquet" % (mount_name)
+df.write.parquet(strMountPointParquetFile)
