@@ -13,7 +13,3 @@ df_remote_table = (spark.read
 # COMMAND ----------
 
 df_remote_table.show(5)
-
-# COMMAND ----------
-
-
