@@ -17,7 +17,3 @@ dbutils.fs.mount(source = source_url,
 # COMMAND ----------
 
 dbutils.fs.ls(mount_point_url)
-
-# COMMAND ----------
-
-
